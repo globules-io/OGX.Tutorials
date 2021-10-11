@@ -1,0 +1,94 @@
+{
+    "routing": {
+        "routes": {
+            "mystage/home": {
+                "#view:Views.MyView": {
+                    "id": "#myview",
+                    "template": "MyView",
+                    "node:OML": {
+                        "#myview > .list:DynamicList": {
+                            "id": "mylist",
+                            "key": "_id",
+                            "mode":"hit",
+                            "display": {
+                                "template": "User",
+                                "css": "user"
+                            },
+                            "list:OSE": "{{json users}}"
+                        }
+                    }
+                }
+            }
+        },
+        "options": {
+            "history": true,
+            "bookmarkable": true
+        },
+        "errors": {}
+    },
+    "vapps": {
+        "mystage:Stages.MyStage": {
+            "template": "MyStage",
+            "use": true,
+            "home": "home",
+            "scope": [
+                "public"
+            ],
+            "theater": false
+        }
+    },
+    "preload": {
+        "/img": [],
+        "/snd": [],
+        "/themes/io-globules-ogx/light/img": [
+            "down.svg",
+            "left.svg",
+            "remove.svg",
+            "right.svg",
+            "up.svg"
+        ],
+        "/themes/io-globules-ogx/dark/img": [
+            "arrow.svg",
+            "down.svg",
+            "file.svg",
+            "folder_closed.svg",
+            "folder_empty.svg",
+            "folder_open.svg",
+            "left.svg",
+            "loading.svg",
+            "loop.svg",
+            "remove.svg",
+            "right.svg",
+            "send.svg",
+            "trash.svg",
+            "up.svg"
+        ],
+        "/json": [
+            "users.json"
+        ],
+        "/html": [
+            "template.MyStage.html",
+            "template.MyView.html",
+            "template.User.html",
+            "template.MyUser.html"
+        ]
+    },
+    "popups": {
+        "width": 300,
+        "height": 400,
+        "anim": "fade"
+    },
+    "windows": {
+        "head": "back",
+        "width": "100%",
+        "height": "100%",
+        "icons": []
+    },
+    "views": {},
+    "overlays": {},
+    "rendertime": false,
+    "scope": [
+        "public"
+    ],
+    "jwt": false
+}

@@ -1,0 +1,7 @@
+[
+    {"_id":1, "first_name":"Eric", "last_name":"Whatever", "email":"", "phone":""},
+    {"_id":2, "first_name":"John", "last_name":"Doe", "email":"", "phone":""},
+    {"_id":3, "first_name":"Sarah", "last_name":"Conor", "email":"", "phone":""},
+    {"_id":4, "first_name":"Paul", "last_name":"Random", "email":"", "phone":""},
+    {"_id":5, "first_name":"Jack", "last_name":"Sparrow", "email":"", "phone":""}
+]
