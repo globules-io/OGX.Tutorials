@@ -2,7 +2,7 @@
     "routing": {
         "routes": {
             "mystage/home": {
-                "#view:Views.MyView": {
+                "default:Views.MyView": {
                     "id": "#myview",
                     "template": "MyView",
                     "node:OML": {
@@ -31,6 +31,7 @@
             "template": "MyStage",
             "use": true,
             "home": "home",
+            "placeholder": "#view",
             "scope": [
                 "public"
             ],
