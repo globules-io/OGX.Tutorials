@@ -6,17 +6,15 @@ OGX.Views.MyView = function(__config){
     var selected_user = null;
 
     //@Override
-    this.construct = function(__data, __route_data){
+    this.construct = function(__data){
         list = app.cfind('DynamicList', 'mylist');
     };
     
     //@Override
-	this.enable = function(){};
+	this.onFocus = function(){};
 	
     //@Override
-	this.disable = function(){
-
-    };    
+	this.onBlur = function(){};    
 	
     //@Override
 	this.ux = function(__bool){

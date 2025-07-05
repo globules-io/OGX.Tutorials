@@ -7,10 +7,10 @@ OGX.Stages.MyStage = function(__obj){
 	this.construct = function(){};
 	
     //@Override
-	this.enable = function(){};
+	this.onFocus = function(){};
 	
     //@Override
-	this.disable = function(){};
+	this.onBlur = function(){};
 	
     //@Override
 	this.ux = function(__bool){

@@ -2,24 +2,27 @@
     "routing": {
         "routes": {
             "mystage/home": {
-                "default:Views.MyView": {
-                    "id": "#myview",
-                    "template": "MyView",
-                    "node:OML": {
-                        "#myview > .list:DynamicList": {
-                            "id": "mylist",
-                            "key": "_id",
-                            "mode":"hit",
-                            "display": {
-                                "template": "User",
-                                "css": "user"
-                            },
-                            "list:OSE": "{{json users}}"
+                "oml": {
+                    "default:Views.MyView": {
+                        "id": "#myview",
+                        "template": "MyView",
+                        "node:OML": {
+                            "#myview > .list:DynamicList": {
+                                "id": "mylist",
+                                "key": "_id",
+                                "mode": "hit",
+                                "display": {
+                                    "template": "User",
+                                    "css": "user"
+                                },
+                                "list:OSE": "{{json users}}"
+                            }
                         }
                     }
                 }
             }
         },
+        "index": "mystage/home",
         "options": {
             "history": true,
             "bookmarkable": true
@@ -29,12 +32,8 @@
     "vapps": {
         "mystage:Stages.MyStage": {
             "template": "MyStage",
-            "use": true,
-            "home": "home",
             "placeholder": "#view",
-            "scope": [
-                "public"
-            ],
+            "scope": "public",
             "theater": false
         }
     },
@@ -69,9 +68,9 @@
         ],
         "/html": [
             "template.MyStage.html",
+            "template.MyUser.html",
             "template.MyView.html",
-            "template.User.html",
-            "template.MyUser.html"
+            "template.User.html"
         ]
     },
     "popups": {
@@ -88,8 +87,6 @@
     "views": {},
     "overlays": {},
     "rendertime": false,
-    "scope": [
-        "public"
-    ],
+    "scope": "public",
     "jwt": false
 }

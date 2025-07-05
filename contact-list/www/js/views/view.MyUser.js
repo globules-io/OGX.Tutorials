@@ -6,7 +6,7 @@ OGX.Views.MyUser = function(__config){
     var list;
 
     //@Override
-    this.construct = function(__data, __route_data){
+    this.construct = function(__data){
         list = app.cfind('DynamicList', 'mylist');
         OGX.Form.bindForm({
             el:'#userdata_'+user._id,
@@ -14,15 +14,9 @@ OGX.Views.MyUser = function(__config){
             validate:true,
             wait:1500,
             fields:{
-                first_name:{
-
-                },
-                last_name:{
-
-                },
-                email:{
-
-                },
+                first_name:{},
+                last_name:{},
+                email:{},
                 phone:{
                     mask:'%%%-%%%-%%%%'
                 }
@@ -31,10 +25,10 @@ OGX.Views.MyUser = function(__config){
     };
     
     //@Override
-	this.enable = function(){};
+	this.onFocus = function(){};
 	
     //@Override
-	this.disable = function(){};    
+	this.onBlur = function(){};    
 	
     //@Override
 	this.ux = function(__bool){
