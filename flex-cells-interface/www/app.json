@@ -1,0 +1,136 @@
+{
+    "routing": {
+        "routes": {
+            "mystage/route1": {
+                "oml": "interface"
+            }
+        },
+        "index": "mystage/route1",
+        "options": {
+            "history": true,
+            "bookmark": true,
+            "cache": false,
+            "jail": false,
+            "eval": false
+        },
+        "cache": [],
+        "errors": {}
+    },
+    "vapps": {
+        "mystage:Stages.MyStage": {
+            "placeholder": ".view",
+            "scope": "public",
+            "theater": false,
+            "template": "MyStage"
+        }
+    },
+    "preload": {
+        "/snd": [],
+        "/img": [
+            "menu.svg"
+        ],
+        "themes/io-globules-ogx/base/fonts": [
+            "Roboto-Black.ttf",
+            "Roboto-BlackItalic.ttf",
+            "Roboto-Bold.ttf",
+            "Roboto-BoldItalic.ttf",
+            "Roboto-Italic.ttf",
+            "Roboto-Light.ttf",
+            "Roboto-LightItalic.ttf",
+            "Roboto-Medium.ttf",
+            "Roboto-MediumItalic.ttf",
+            "Roboto-Regular.ttf",
+            "Roboto-Thin.ttf",
+            "Roboto-ThinItalic.ttf"
+        ],
+        "/themes/io-globules-ogx/light/img": [
+            "about.svg",
+            "add.svg",
+            "arrow.svg",
+            "attach.svg",
+            "close.svg",
+            "copy.svg",
+            "down.svg",
+            "edit.svg",
+            "edit_off.svg",
+            "emoji.svg",
+            "file.svg",
+            "folder_close.svg",
+            "folder_closed.svg",
+            "folder_empty.svg",
+            "folder_open.svg",
+            "key.svg",
+            "left.svg",
+            "loading.svg",
+            "loop.svg",
+            "remove.svg",
+            "right.svg",
+            "send.svg",
+            "settings.svg",
+            "trash.svg",
+            "up.svg",
+            "view.svg",
+            "view_off.svg"
+        ],
+        "/themes/io-globules-ogx/dark/img": [
+            "about.svg",
+            "add.svg",
+            "arrow.svg",
+            "attach.svg",
+            "close.svg",
+            "copy.svg",
+            "down.svg",
+            "edit.svg",
+            "edit_off.svg",
+            "emoji.svg",
+            "file.svg",
+            "folder_close.svg",
+            "folder_closed.svg",
+            "folder_empty.svg",
+            "folder_open.svg",
+            "globules.svg",
+            "key.svg",
+            "left.svg",
+            "loading.svg",
+            "loop.svg",
+            "remove.svg",
+            "right.svg",
+            "send.svg",
+            "settings.svg",
+            "trash.svg",
+            "up.svg",
+            "view.svg",
+            "view_off.svg"
+        ],
+        "/oml": [
+            "interface.oml"
+        ],
+        "/html": [
+            "template.MyStage.html",
+            "template.View1.html",
+            "template.View2.html",
+            "template.View3.html"
+        ]
+    },
+    "popups": {
+        "width": 300,
+        "height": 400,
+        "anim": "fade"
+    },
+    "windows": {
+        "head": "back",
+        "width": "100%"
+    },
+    "views": {},
+    "overlays": {},
+    "splash": {
+        "enabled": false,
+        "color": null,
+        "image": null,
+        "auto_hide": false,
+        "hide_timeout": 0
+    },
+    "rendertime": false,
+    "scope": "public",
+    "jwt": true
+}

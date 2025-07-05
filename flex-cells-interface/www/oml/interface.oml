@@ -1,0 +1,37 @@
+{
+     "default:FlexCells": {
+          "axis": "x",
+          "children": [
+               "40%",
+               "60%"
+          ],
+          "node:OML": [
+               {
+                    "default:Views.View1": {
+                         "template": "View1"
+                    }
+               },
+               {
+                    "default:FlexCells": {
+                         "axis": "y",
+                         "children": [
+                              "50%",
+                              "50%"
+                         ],
+                         "node:OML": [
+                              {
+                                   "default:Views.View2": {
+                                        "template": "View2"
+                                   }
+                              },
+                              {
+                                   "default:Views.View3": {
+                                        "template": "View2"
+                                   }
+                              }
+                         ]
+                    }
+               }
+          ]
+     }
+}
