@@ -1,0 +1,4 @@
+[
+     {"_id" : "r1", "label": "View 1", "route" : "mystage/route1"},
+     {"_id" : "r2", "label": "View 2", "route" : "mystage/route2"}
+]

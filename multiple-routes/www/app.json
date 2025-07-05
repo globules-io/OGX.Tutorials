@@ -1,0 +1,171 @@
+{
+    "routing": {
+        "routes": {
+            "mystage/route1": {
+                "oml": {
+                    "default:Views.View1": {
+                        "template": "View1"
+                    }
+                }
+            },
+            "mystage/route2": {
+                "oml": {
+                    "default:Views.View2": {
+                        "template": "View2"
+                    }
+                }
+            }
+        },
+        "index": "mystage/route1",
+        "options": {
+            "history": true,
+            "bookmark": true,
+            "cache": false,
+            "jail": false,
+            "eval": false
+        },
+        "cache": [],
+        "errors": {}
+    },
+    "vapps": {
+        "mystage:Stages.MyStage": {
+            "placeholder": ".view",
+            "scope": "public",
+            "theater": false,
+            "template": "MyStage",
+            "node:OML": {
+                "winmenu:Window": {
+                    "head": "back",
+                    "anim": "left",
+                    "width": 300,
+                    "min_width": 200,
+                    "height": "100%",
+                    "show": false,
+                    "drag": true,
+                    "resize": true,
+                    "node:OML": [
+                        {
+                            "default:DynamicList": {
+                                "id": "#menu",
+                                "mode": "hit",
+                                "display": {
+                                    "template": "MenuItem"
+                                },
+                                "list:OSE": "{{json menu}}"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "preload": {
+        "/snd": [],
+        "themes/io-globules-ogx/base/fonts": [
+            "Roboto-Black.ttf",
+            "Roboto-BlackItalic.ttf",
+            "Roboto-Bold.ttf",
+            "Roboto-BoldItalic.ttf",
+            "Roboto-Italic.ttf",
+            "Roboto-Light.ttf",
+            "Roboto-LightItalic.ttf",
+            "Roboto-Medium.ttf",
+            "Roboto-MediumItalic.ttf",
+            "Roboto-Regular.ttf",
+            "Roboto-Thin.ttf",
+            "Roboto-ThinItalic.ttf"
+        ],
+        "/img": [
+            "menu.svg"
+        ],
+        "/themes/io-globules-ogx/light/img": [
+            "about.svg",
+            "add.svg",
+            "arrow.svg",
+            "attach.svg",
+            "close.svg",
+            "copy.svg",
+            "down.svg",
+            "edit.svg",
+            "edit_off.svg",
+            "emoji.svg",
+            "file.svg",
+            "folder_close.svg",
+            "folder_closed.svg",
+            "folder_empty.svg",
+            "folder_open.svg",
+            "key.svg",
+            "left.svg",
+            "loading.svg",
+            "loop.svg",
+            "remove.svg",
+            "right.svg",
+            "send.svg",
+            "settings.svg",
+            "trash.svg",
+            "up.svg",
+            "view.svg",
+            "view_off.svg"
+        ],
+        "/themes/io-globules-ogx/dark/img": [
+            "about.svg",
+            "add.svg",
+            "arrow.svg",
+            "attach.svg",
+            "close.svg",
+            "copy.svg",
+            "down.svg",
+            "edit.svg",
+            "edit_off.svg",
+            "emoji.svg",
+            "file.svg",
+            "folder_close.svg",
+            "folder_closed.svg",
+            "folder_empty.svg",
+            "folder_open.svg",
+            "globules.svg",
+            "key.svg",
+            "left.svg",
+            "loading.svg",
+            "loop.svg",
+            "remove.svg",
+            "right.svg",
+            "send.svg",
+            "settings.svg",
+            "trash.svg",
+            "up.svg",
+            "view.svg",
+            "view_off.svg"
+        ],
+        "/json": [
+            "menu.json"
+        ],
+        "/html": [
+            "template.MenuItem.html",
+            "template.MyStage.html",
+            "template.View1.html",
+            "template.View2.html"
+        ]
+    },
+    "popups": {
+        "width": 300,
+        "height": 400,
+        "anim": "fade"
+    },
+    "windows": {
+        "head": "back",
+        "width": "100%"
+    },
+    "views": {},
+    "overlays": {},
+    "splash": {
+        "enabled": false,
+        "color": null,
+        "image": null,
+        "auto_hide": false,
+        "hide_timeout": 0
+    },
+    "rendertime": false,
+    "scope": "public",
+    "jwt": true
+}

@@ -1,0 +1,24 @@
+.ogx_stage{
+    display: flex;
+    flex-direction: column;
+}
+.ogx_stage > .bar{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.ogx_stage > .bar > .icon_menu{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('/img/menu.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.ogx_stage > .view{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    flex-grow: 1;
+}
