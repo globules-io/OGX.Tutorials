@@ -1,5 +1,4 @@
 # OGX.Tutorials
-OGX.JS Tutorials
 
 ### Contact List
 > A simple contact list
