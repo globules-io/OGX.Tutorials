@@ -1,0 +1,30 @@
+{
+     "default:Views.MyView":{
+          "id": "#myview",
+          "template": "MyView",
+          "node:OML": {
+               "default:Carousel": {                                       
+                    "node:OML":[
+                         {
+                              "default:Templates.MyTemplate":{
+                                   "css" : "red",
+                                   "data" : {"label" : "INDEX 0"}
+                              }
+                         },
+                         {
+                              "default:Templates.MyTemplate":{
+                                   "css" : "green",
+                                   "data" : {"label" : "INDEX 1"}
+                              }
+                         },
+                         {
+                              "default:Templates.MyTemplate":{
+                                   "css" : "blue",
+                                   "data" : {"label" : "INDEX 2"}
+                              }
+                         }                    
+                    ]
+               }
+          }
+     }
+}
